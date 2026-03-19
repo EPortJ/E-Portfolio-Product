@@ -150,6 +150,22 @@
     bottom: 60%; 
 }
 
+.screen-wipe{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#324AB2;
+    transform:translateX(-100%);
+    transition:transform 0.7s ease;
+    z-index:9999;
+}
+
+.screen-wipe.show{
+    transform:translateX(0);
+}
+
 .home-content{
     display: flex;
     align-items: center;      
